@@ -1,0 +1,116 @@
+header {
+  background-color: #191970;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  font-size: 12pt;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: sticky;
+  top: 0px;
+}
+
+header ul {
+  padding-top: 10px;
+}
+
+header li {
+  display: inline;
+  padding-left: 20px;
+}
+
+header a {
+  color: white;
+}
+
+#home {
+  margin-right: -10px;
+
+}
+
+/*#home:hover {
+  width: 60;
+  height: 60;
+} */
+
+#navigation {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#nav {
+  float: left;
+}
+
+#pers {
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+#products, #categories, #home, #offers, #favourites, {
+  order: 0;
+  flex-grow: 1;
+}
+
+#login, #shoppingcart {
+  order: 1;
+  flex-grow: 1;
+}
+
+#search {
+  background-color: #191970;
+  color: white;
+  border: 1px solid #191970;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 350px;
+  font-size: 12pt;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  vertical-align: top;
+}
+
+#headerSpan{
+  padding-left: 40px;
+}
+
+#homeIconSpan{ /* Wtf keine Ahunng */
+  padding-bottom: 50px;
+}
+header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11pt;
+  letter-spacing: 0.15em;
+  display: inline;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+header a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
